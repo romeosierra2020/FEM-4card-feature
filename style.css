@@ -136,3 +136,32 @@ section {
     position: relative;
     top: 70rem;
 }
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --font-title-large: 2rem;
+    }
+    header {
+        width: 33.4rem;
+    }
+    section {
+        grid-template-columns: 22rem 22rem 22rem;
+        grid-template-rows: 8rem 8rem 8rem 8rem 8rem;
+        column-gap: 1.5rem;
+    }
+    .card-1 {
+        grid-area: 2/1/4/2;
+    }
+    .card-2 {
+        grid-area: 1/2/3/3;
+    }
+    .card-3 {
+        grid-area: 3/2/5/3;
+    }
+    .card-4 {
+        grid-area: 2/3/4/4;
+    }
+    .attribution {
+        top: 40rem;
+    }
+}
